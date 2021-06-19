@@ -5,6 +5,11 @@ from datetime import date
 
 
 def calculate_when_user_turns_100():
+    """
+    Calculates the year by which the user turns 100 based on his age.
+
+    :return: none.
+    """
     user_name = input('Enter your name : ')
     age = int(input('Enter your age : '))  # age is an integer and not a decimal. Hence the typecast
 

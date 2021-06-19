@@ -9,6 +9,12 @@ WEAK = 3
 
 
 def generate_password(password_complexity):
+    """
+    Generates the password based on the complexity requested by the user.
+
+    :param password_complexity: could be Strong, Medium, Weak
+    :return: generated password based on the complexity
+    """
     password_sequence = string.ascii_letters + string.digits + string.punctuation
     if password_complexity == STRONG:
         password = ''.join(random.choice(password_sequence) for i in range(32))
